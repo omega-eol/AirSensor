@@ -13,4 +13,4 @@
 3. `/Code/wifi_acc_sensor` - Receives data from accelerometer and sends data to REST API using ESP8266 WiFi module.
 
 ## Dependencies
-To view the Arduino code you need to download (Arduino IDE)[https://www.arduino.cc/en/Main/Software].
+To view the Arduino code you need to download [Arduino IDE](https://www.arduino.cc/en/Main/Software).
