@@ -7,12 +7,12 @@ SoftwareSerial esp8266(7,8);
 boolean debug = true;
 
 // WiFi network
-const String ssid     = "Elochka_2.4GHz";
-const String password = "Kukareku";
+const String ssid     = "<SSID>";
+const String password = "<PASSWORD>";
 boolean wifi_connected = false;
 
 // Remote server
-const String serverIP = "192.168.0.103";
+const String serverIP = "192.168.0.100";
 const int port = 3000;
 
 // Sensor ID
@@ -28,16 +28,6 @@ int wait_time = 5000; // time to pause in main loop
 const int xpin = A1;                  // x-axis of the accelerometer
 const int ypin = A2;                  // y-axis
 const int zpin = A3;                  // z-axis (only on 3-axis models)
-
-// ESP commands:
-// to connect to WiFi network
-// CONNECT ssid=Elochka_2.4GHz password=Kukareku
-// check wifi status
-// WIFI_STATUS
-// send API info
-// API host=192.168.0.102 port=3000
-// send POST request
-// POST sensorID=55f824c006e288bd25abd3bc data={"o1":1.0,"o2":2.0,"o3":3.0}
 
 // Runs ones after RST
 void setup()
